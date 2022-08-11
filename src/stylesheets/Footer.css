@@ -1,0 +1,442 @@
+hr {
+    margin: 0px 165px;
+    background-color: rgba(255, 255, 255, 0.5);
+    ;
+}
+
+.Footer {
+    background-color: #141414;
+    padding-bottom: 60px;
+}
+
+.FDescription {
+    background-image: url(../images/BackImgFooter.png);
+    padding: 60px 163px 60px 163px;
+}
+
+.FDescription p:nth-child(1) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #E8AA31;
+    text-align: center;
+}
+
+.FDescription p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.FInfo,
+.FContacts {
+    display: flex;
+    flex-direction: row;
+    padding: 102px 165px 30px 163px;
+    gap: 40px;
+}
+
+.FInfo div,
+.FContacts div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 40px;
+}
+
+.FInfo ol,
+.FContacts ol {
+    flex: 1 1 auto;
+}
+
+.FInfo ol li,
+.FContacts ol li,
+.FInfo ol li a,
+.FContacts ol li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}
+
+.FInfo ol li a,
+.FContacts ol li a {
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0px;
+    /* ANIMATION */
+    text-decoration: none;
+    background: no-repeat 0 100%;
+    background-image: linear-gradient(#E8AA31, #E8AA31);
+    background-size: 0% 2px;
+    transition: background-size .3s ease;
+}
+
+.FInfo ol li a:hover,
+.FInfo ol li a:focus,
+.FContacts ol li a:hover,
+.FContacts ol li a:focus {
+    background-size: 100% 2px;
+}
+
+.FInfo ol li:nth-child(1),
+.FContacts ol li:nth-child(1) {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+    margin-top: 0px;
+}
+
+.FContacts div ol li .Con {
+    margin-right: 16px;
+}
+
+
+
+.FContacts {}
+
+.FDetails {
+    margin-top: 30px;
+    padding-bottom: 50px;
+    padding: 0px 180px 0px 164px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.FDetails p:nth-child(2) {
+    /* white-space: nowrap; */
+    text-align: right;
+}
+
+.FDetails p {
+    width: 50%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.FContacts div:nth-child(1) ol:nth-child(1) li {
+    display: flex;
+    flex-direction: row;
+}
+
+.Input input {
+    background-color: #202020;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 325px;
+    height: 50px;
+    padding-left: 19px;
+
+}
+
+.Input input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.52);
+}
+
+.Input button {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background: rgba(249, 64, 64, 0.899);
+    border: none;
+    white-space: nowrap; 
+    flex-shrink: 0;
+}
+
+.Input button i {
+    margin: 0;
+    color: white;
+}
+
+.Input {
+    display: flex;
+    flex-direction: row;
+}
+
+.CheckBOX {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.CheckBOX span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.Input input {
+    color: white;
+    font-size: 22px;
+}
+
+
+
+
+.FContacts div:nth-child(2) ol li:nth-child(2) .OurRules {
+    color: #E8AA31;
+}
+
+.BtnF::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\58";
+    font-size: 30px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.BtnF.checked::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+    font-size: 30px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.BtnF.checked {
+    background-color: #E8AA31;
+    transition: 0.5s;
+}
+
+.BtnF {
+    transition: 0.5s;
+}
+
+.MedaiSoc {
+    margin-left: 164px;
+    margin-bottom: 30px;
+}
+
+.MedaiSoc img {
+    width: 50px;
+    height: 50px;
+    margin-right: 22px;
+}
+
+
+
+
+@media (max-width:1100px) {
+    .FInfo,
+    .FContacts {
+        flex-direction: column;
+        padding: 102px 175px 30px 163px;
+    }
+    .FInfo div,
+    .FContacts div{
+        width: fit-content;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+    }
+    .FContacts div:nth-child(2){
+        /* flex-direction: column;
+         */
+    }
+    .FContacts div ol{
+        width: 50%;
+    }
+    .FInfo div:nth-child(1) ol:nth-child(2),
+    .FInfo div:nth-child(2) ol:nth-child(2){
+        width: 37%;
+        position: absolute;
+        right: 0;
+    }
+    .FInfo div:nth-child(2){
+        margin: 60px 0 30px 0;
+    }
+    .Input button{
+        width: 50px;
+        height: 50px;
+        white-space: nowrap; 
+    }
+    .FDetails p:nth-child(1){
+        width: 70%;
+    } 
+    .FDetails p:nth-child(2) {
+        margin-top: 30px;
+        width: 30%;
+    }
+}
+
+
+@media (max-width:1000px) {
+    .FDescription {
+        padding: 60px 100px 60px 100px;
+    }
+}
+
+@media (max-width:850px){
+    .FirstHR{
+        margin-top: 50px;
+    } 
+    .FInfo,
+    .FContacts {
+        padding: 102px 100px 30px 100px;
+    }
+    hr{
+        margin: 0 100px;
+    }
+    .MedaiSoc{
+        margin-left: 100px;
+    }
+    .FDetails{
+        padding: 0px 100px 0px 100px;
+    }
+}
+
+@media (max-width:740px) {
+    .FDescription {
+        padding: 40px 50px 40px 50px;
+    }
+    .FInfo{
+        padding: 102px 50px 30px 50px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .FInfo div:nth-child(1) ol:nth-child(2),
+    .FInfo div:nth-child(2) ol:nth-child(2){
+        width: 50%;
+    }
+    hr{
+        margin: 0 50px;
+    }
+    .FContacts{
+        padding: 102px 50px 30px 50px;
+    }
+    .FContacts div:nth-child(2){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .FContacts div:nth-child(2) ol{
+        width: 100%;
+        text-align: center;
+    }
+    .Input{
+        justify-content: center;
+    }
+    .CheckBOX{
+        justify-content: center;
+    }
+    .MedaiSoc{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .FDetails{
+        flex-direction: column;
+    }
+    .FDetails p:nth-child(1){
+        width: 100%;
+        text-align: center;
+    } 
+    .FDetails p:nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:650px){
+    .FInfo{
+        padding: 102px 40px 30px 40px;
+    }
+    .FInfo div ol li,
+    .FInfo div ol li a{
+        font-size: 15px;
+    }
+    .FInfo div{
+        /* width: auto; */
+    }
+    .FInfo div:nth-child(1) ol:nth-child(2),
+     .FInfo div:nth-child(2) ol:nth-child(2){
+        /* width: 37%; */
+        position: absolute;
+        right: 0;
+     }
+     hr{
+        margin: 0 40px;
+     }
+}
+
+@media (max-width:500px) {
+    .FInfo div:nth-child(1) ol:nth-child(2),
+     .FInfo div:nth-child(2) ol:nth-child(2){
+        position: static;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .FInfo div{
+        width: auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .FDescription p:nth-child(1) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .FInfo div {
+        text-align: center;
+    }
+
+    .FDescription p:nth-child(2) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .FContacts div ol li:nth-child(1){
+        text-align: center;
+    }
+    .Pay{
+        display: block;
+        text-align: center;
+    }
+    .FContacts div ol li a{
+        font-size: 15px;
+    }
+    .FContacts div:nth-child(1){
+        flex-direction: column;
+        justify-content: center;
+       /*  text-align: center; */
+        align-items: center;
+    }
+    .CheckBOX span{
+        text-align: left;
+    }
+    .FContacts div:nth-child(1) ol:nth-child(1) li:nth-child(1) {
+        justify-content: center;
+    }
+    .FContacts{
+        padding: 102px 40px 30px 40px;
+    }
+    .FContacts div ol{
+        width: 100%;
+    }
+    .Input input{
+        width: 230px;
+    }
+    .MedaiSoc img{
+        width: 40px;
+        height: 40px;
+    }
+    .FDetails{
+        padding: 0 40px 0 40px;
+    }
+}

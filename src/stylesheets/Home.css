@@ -1,0 +1,503 @@
+.slick-slider {
+    z-index: -1;
+}
+
+.allTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.upanddownSlider {
+    background-image: url(../images/background-image_title.png);
+}
+
+.knifeTitle {
+    margin-top: 35px;
+}
+
+.knifeTitle img {
+    position: absolute;
+    z-index: 9;
+    right: 14%;
+}
+
+.circle {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    right: 127px;
+    top: 90px;
+    z-index: 1;
+}
+
+.bottomTitle {
+    display: flex;
+    flex-direction: row;
+    margin-top: 270px;
+    padding: 0px 160px 54px 160px;
+    justify-content: center;
+    gap: 180px;
+}
+
+.bottomTitle div {
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+    justify-content: center;
+}
+
+.bottomTitle div div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.bottomTitle div span {
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.verifyTitle div {
+    height: 64px;
+    width: 247px;
+}
+
+.verifyTitle div img {
+    height: 100%;
+    width: 64px;
+}
+
+.transportTitle div {
+    width: 255px;
+    height: 60px;
+}
+
+.transportTitle div img {
+    height: 100%;
+    width: 90px;
+}
+
+.settingsTitle div {
+    width: 274px;
+    height: 77px;
+}
+
+.settingsTitle div img {
+    height: 100%;
+    width: 74px;
+}
+
+.procentsTitle div {
+    width: 211px;
+    height: 66px;
+    text-align: center;
+}
+
+.procentsTitle div img {
+    height: 100%;
+    width: 67px;
+}
+
+.verifyTitle div img,
+.transportTitle div img,
+.settingsTitle div img,
+.procentsTitle div img {
+    margin: 0 auto;
+}
+
+.AllCategories {
+    margin: 0;
+    width: 1588px;
+    margin: auto;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 33px 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+.categorie {
+    width: 509px;
+    height: 293px;
+    box-shadow: 0px 0px 10px grey;
+    position: relative;
+    overflow: hidden;
+}
+
+.categorie img {
+    z-index: 9;
+}
+
+.categorie span {
+    z-index: 10;
+}
+
+.categorie span {
+    display: block;
+    font-size: 23px;
+    margin-top: 27px;
+    margin-left: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #000000;
+}
+
+
+.categorie hr {
+    width: 68px;
+    height: 2px;
+    border: none;
+    background-color: #e8aa31;
+    /*  - так нужно */
+    color: #e8aa31;
+    /*  - так нужно */
+    margin-left: 30px;
+    margin-top: 21px;
+}
+
+.categorie ul {
+    list-style-type: disc;
+    color: #e8aa31;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.categorie ul li span {
+    color: black;
+    font-size: 13px;
+    margin: 10px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.FCat img {
+    height: 276px;
+    position: absolute;
+    top: 30px;
+    left: 262px;
+}
+
+.SCat img {
+    position: absolute;
+    width: 82px;
+    height: 269px;
+    left: 363px;
+    top: 23px;
+}
+
+.TCat img {
+    position: absolute;
+    width: 244px;
+    height: 225px;
+    left: 265px;
+    top: 68px;
+}
+
+.FourCat img {
+    position: absolute;
+    width: 183px;
+    height: 263px;
+    left: 326px;
+    top: 31px;
+}
+
+.FifCat img {
+    position: absolute;
+    width: 320px;
+    height: 239px;
+    left: 254px;
+    top: 76px;
+}
+
+.SixCat img {
+    position: absolute;
+    width: 415px;
+    height: 305px;
+    left: 168px;
+    top: -5px;
+}
+
+@media (max-width: 1600px) {
+    .AllCategories {
+        margin: 0;
+        margin-top: 100px;
+        width: 1051px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        gap: 33px 30px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .bottomTitle {
+        gap: 18px;
+    }
+
+    .bottomTitle div {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .circle {
+        right: 0;
+    }
+
+    .knifeTitle img {
+        right: 0;
+    }
+
+    .bottomTitle div span {
+        font-size: 16px;
+    }
+
+    .bottomTitle {
+        gap: 10px;
+    }
+
+    .bottomTitle div {
+        gap: 20px;
+    }
+
+    .bottomTitle div div {
+        width: 230px;
+    }
+
+    .AllCategories {
+        width: 833px;
+    }
+
+    .categorie {
+        width: 400px;
+    }
+
+    .FCat img {
+        height: 276px;
+        position: absolute;
+        top: 30px;
+        left: 162px;
+    }
+
+    .SCat img {
+        position: absolute;
+        width: 82px;
+        height: 269px;
+        left: 263px;
+        top: 23px;
+    }
+
+    .TCat img {
+        position: absolute;
+        width: 244px;
+        height: 225px;
+        left: 165px;
+        top: 68px;
+    }
+
+    .FourCat img {
+        position: absolute;
+        width: 183px;
+        height: 263px;
+        left: 226px;
+        top: 31px;
+    }
+
+    .FifCat img {
+        position: absolute;
+        width: 320px;
+        height: 239px;
+        left: 154px;
+        top: 76px;
+    }
+
+    .SixCat img {
+        position: absolute;
+        width: 415px;
+        height: 305px;
+        left: 68px;
+        top: -5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .AllCategories {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .SCat img {
+        height: 240px;
+        top: 83px;
+    }
+
+    .knifeTitle img {
+        right: 3%;
+        width: 300px;
+        height: 328px;
+    }
+
+    .bottomTitle {
+        flex-direction: column;
+        margin-top: 260px;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 860px) {
+    .AllCategories {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .categorie {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* .categorie{
+           width: 600px;
+           height: 345px;
+       } */
+}
+
+@media (max-width: 630px) {
+    .upanddownSlider {
+        background-image: url(../images/background_bigWid.png);
+        background-repeat: no-repeat;
+    }
+
+    .knifeTitle img {
+        right: 0;
+        width: 240px;
+        height: 260px;
+    }
+
+    .titleBott {
+        margin-top: 10px;
+    }
+
+    .allDescription {
+        margin-top: 0;
+    }
+
+    .bottomTitle {
+        margin-top: 200px;
+        padding: 0;
+    }
+
+    .bottomTitle div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottomTitle div div {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 530px) {
+    .bottomTitle {
+        margin-top: 280px;
+    }
+
+    .knifeTitle img {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .categorie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 290px;
+        height: 338px;
+    }
+
+
+    .categorie span{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 34px;
+        color: #000000;
+        margin-top: 30;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .categorie hr{
+        margin-top: 10;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .categorie ul{
+        margin-top: 30px;
+    }
+    .FCat img {
+        width: 82px;
+        height: 291px;
+        position: absolute;
+        top: 256px;
+        left: 42px;
+        rotate: (-90deg);
+    }
+    
+    .SCat img {
+        position: absolute;
+        width: 82px;
+        height: 269px;
+        left: 363px;
+        top: 23px;
+    }
+    
+    .TCat img {
+        position: absolute;
+        width: 244px;
+        height: 225px;
+        left: 265px;
+        top: 68px;
+    }
+    
+    .FourCat img {
+        position: absolute;
+        width: 183px;
+        height: 263px;
+        left: 326px;
+        top: 31px;
+    }
+    
+    .FifCat img {
+        position: absolute;
+        width: 320px;
+        height: 239px;
+        left: 254px;
+        top: 76px;
+    }
+    
+    .SixCat img {
+        position: absolute;
+        width: 415px;
+        height: 305px;
+        left: 168px;
+        top: -5px;
+    }
+}
