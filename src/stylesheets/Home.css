@@ -121,7 +121,6 @@
 .AllCategories {
     margin: 0;
     width: 1588px;
-    margin: auto;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 33px 30px;

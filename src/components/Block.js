@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { settingsBlock } from "./Collection";
-import SmallCard from "./SmallCard";
+import KnifeLisa from "../product/KnifeLisa";
+import Lantern from "../product/Lantern";
 import '../stylesheets/Components.css'
 
 export default class SecondItems extends Component {
@@ -16,12 +17,12 @@ export default class SecondItems extends Component {
         <div className="settingsSlider">
           <style>{cssstyle}</style>
           <Slider {...settingsBlock}>
-            <SmallCard />
-            <SmallCard />
-            <SmallCard />
-            <SmallCard />
-            <SmallCard />
-            <SmallCard />
+            <KnifeLisa />
+            <Lantern />
+            <KnifeLisa />
+            <Lantern />
+            <KnifeLisa />
+            <Lantern />
           </Slider>
         </div>
 

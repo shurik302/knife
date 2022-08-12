@@ -53,11 +53,11 @@ export default class MultipleItems extends Component {
                   <div className='priceAndAnother'>
                     <span className='price'>{target.price}</span>
                     <div className='favoritesAndComparison'>
-                      <i class="fa-solid fa-heart"></i>
                       <i class="fa-solid fa-scale-balanced"></i>
+                      <i class="fa-regular fa-heart"></i>
                     </div>
                   </div>
-                  <div className='button'><button>В корзину<i class="fa-solid fa-cart-arrow-down"></i></button></div>
+                  <div className='button'><button>В корзину<i class="fa-solid fa-cart-shopping"></i></button></div>
                 </div>
               </div>
             </div>
@@ -71,8 +71,17 @@ export default class MultipleItems extends Component {
 
 const cssstyle = `
 
+.slick-list{
+  z-index:1;
+}
+.slick-slider{
+  z-index:1;
+}
 
-
+.slick-slide{
+  z-index:2;
+  width:95%;
+}
 .SliderCards{
   margin-top:0px;
   height:fit-content;

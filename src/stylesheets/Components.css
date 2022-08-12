@@ -47,7 +47,8 @@
 .fa-user-alt {
     color: white;
 }
-.fa-earth-europe{
+
+.fa-earth-europe {
     font-size: 30px;
     color: white;
     position: absolute;
@@ -55,7 +56,8 @@
     top: 30px;
     cursor: pointer;
 }
-.languageMenu{
+
+.languageMenu {
     position: absolute;
     flex-direction: column;
     background-color: #303030;
@@ -69,7 +71,8 @@
     gap: 5px;
     display: none;
 }
-.languageMenu button{
+
+.languageMenu button {
     width: 60px;
     height: 40px;
     display: flex;
@@ -80,15 +83,17 @@
     border: none;
     z-index: 1000;
 }
-.open{
+
+.open {
     display: flex;
 }
 
-.languageMenu button img{
+.languageMenu button img {
     width: 60px;
     height: 40px;
     border-radius: 3px;
 }
+
 .navUl {
     display: flex;
     flex-direction: row;
@@ -507,13 +512,15 @@
 }
 
 /* END SLIDER */
+
 .AllSCard {
     width: 95%;
-    /* height: 600px; */
+    height: 600px;
     box-shadow: 0px 0px 12px silver;
     margin-top: 37px;
     margin-bottom: 61px;
     margin-left: 12px;
+    background-color: white;
 }
 
 .divInImg {
@@ -524,18 +531,72 @@
 }
 
 .divInImg img {
+    margin: 0;
     width: 100%;
-    height: 90%;
-    border: 1px solid red;
+    height: 295px;
+    object-fit: fill; 
 }
+
 
 .info {
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 34px;
+    color: #ABABAB;
 }
 
 .infoCard {
+    margin-top: 20px;
     padding: 0px 20px 29px 20px;
+}
+.infoCard hr{
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+}
+.price{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #141414;
+}
+.favoritesAndComparison .fa-scale-balanced{
+    font-size: 28px;
+    margin-right: 15px;
+}
+.favoritesAndComparison .fa-heart{
+    font-size: 28px;
+    color: #E8AA31;
+}
+.button{
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    width: 316px;
+    height: 50px;
+    background-color: #E8AA31;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 46px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+    box-shadow: 0 0 10px #E8AA31;
+}
+.fa-cart-shopping{
+    margin-left: 15px;
+    font-size: 18px;
+}
+.nameKnife{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #141414;
 }
 
 .raiting {
@@ -543,6 +604,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.quantityRevios{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+    color: #ABABAB;
 }
 
 .raiting div {
@@ -569,15 +636,16 @@
     width: 100%;
     border: 1px solid red;
     margin-top: 164px;
-    padding: 18px 0px 45px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 .settingsText {
-    width: 26%;
     display: flex;
     flex-direction: column;
-    padding: 30px 66px 0px 165px;
+    padding: 0px 30px 0px 0px;
+    margin-left: 9%;
     color: white;
+    width: 30%;
 }
 
 .settingsText span:nth-child(1) {
@@ -612,7 +680,8 @@
 }
 
 .settingsSlider {
-    width: 74%;
+    margin-right: 9%;
+    width: 61%;
     z-index: 3;
 }
 
@@ -707,6 +776,12 @@
 
 /* МЕДИА ЗАПРОСЫ */
 @media (max-width: 1853px) {
+    .settingsText{
+        margin-left: 5%;
+    }
+    .settingsSlider{
+        margin-right: 5%;
+    }
     .CenterDown {
         gap: 0;
     }
@@ -842,18 +917,21 @@
 }
 
 @media (max-width: 992px) {
-    .fa-earth-europe{
+    .fa-earth-europe {
         right: 40px;
         top: 20px;
     }
-    .languageMenu{
+
+    .languageMenu {
         right: 20px;
         width: 70px;
         top: 60px;
     }
-    .open{
+
+    .open {
         display: flex;
     }
+
     .buttonM {
         visibility: visible;
     }
@@ -985,28 +1063,34 @@
 }
 
 @media (max-width: 576px) {
-    .navUlPerson{
+    .navUlPerson {
         right: 100px;
     }
-    .uCab{
+
+    .uCab {
         display: none;
     }
-    .fa-user-alt{
+
+    .fa-user-alt {
         font-size: 30px;
         margin-top: 10px;
     }
-    .fa-earth-europe{
+
+    .fa-earth-europe {
         right: 50px;
         top: 20px;
     }
-    .languageMenu{
+
+    .languageMenu {
         right: 30px;
         width: 70px;
         top: 60px;
     }
-    .open{
+
+    .open {
         display: flex;
     }
+
     .loubarHead {
         border-top: 1px solid white;
         background-color: black;
@@ -1095,10 +1179,12 @@
         position: absolute;
         right: 50px;
     }
-    .fa-earth-europe{
+
+    .fa-earth-europe {
         right: 25px;
     }
-    .languageMenu{
+
+    .languageMenu {
         right: 5px;
     }
 
@@ -1128,7 +1214,8 @@
         width: 90%;
         margin: auto;
     }
-    .navUl li a{
+
+    .navUl li a {
         font-size: 9px;
     }
 }
@@ -1190,23 +1277,28 @@
         display: block;
         margin-right: 40px;
     }
-    .fa-earth-europe{
+
+    .fa-earth-europe {
         top: 25px;
         right: 15px;
     }
-    .languageMenu{
+
+    .languageMenu {
         top: 65px;
         right: 0px;
     }
+
     .MCabinet a {
         width: 30px;
         height: 30px;
     }
-    .fa-user-alt{
+
+    .fa-user-alt {
         font-size: 30px;
         margin-right: 30px;
     }
-    .imgHead{
+
+    .imgHead {
         margin-top: 8px;
         margin-left: 70%;
     }
