@@ -877,6 +877,7 @@
     flex-direction: row;
     gap: 50px;
     margin-top: 120px;
+    margin-bottom: 120px;
     margin-right: auto;
     margin-left: auto;
 }
