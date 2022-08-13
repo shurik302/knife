@@ -24,7 +24,6 @@
   .techPart {
     position: absolute;
     margin: 40px 160px 0 160px;
-    border: 1px solid red;
     top: 0;
   }
   .divWithFoto {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../stylesheets/Components.css'
+import '../stylesheets/Components.css';
 
 function NewsHTML({ imageCard, nameState, dataState }) {
   return (

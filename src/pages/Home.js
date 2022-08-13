@@ -14,7 +14,8 @@ import fiCat from "../images/fiCat.png";
 import sxCat from "../images/sxCat.png";
 import SliderCards from "../components/SliderCards";
 import Block from "../components/Block";
-import NewsHTML from "../components/OursArticles";
+import OursArticles from "../components/OursArticles";
+import AdvertisementBlock from "../components/AdvertisementBlock";
 import "../stylesheets/Components.css";
 
 function Home() {
@@ -182,34 +183,35 @@ function Home() {
       <div className="sliders_div">
         <SliderCards nameSlider="Хит продаж" toPage="Перейти в каталог" />
       </div>
-
-      <SliderCards />
-      <SliderCards />
-      <SliderCards />
-
       <Block
         nameBlock="Новинки"
         textBlock="Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками."
         toPageBlock="Больше новинок"
       />
-      {/* <div className="OursArticles">
-      <OursArticles 
-        nameblock="Наши статьи"
-        imageCardF={require("../images/ImgFirstNew.png")}
-        nameStateF="Всё о ножах: как правильно выбрать"
-        dataStateF="24.07.2019"
-        imageCardS={require("../images/backtestknife.png")}
-        nameStateS="Всё о ножах: как правильно выбрать"
-        dataStateS="24.07.2019"
-        imageCardT={require("../images/third_knife.png")}
-        nameStateT="Всё о ножах: как правильно выбрать"
-        dataStateT="24.07.2019"
-        imageCardFR={require("../images/third_knife.png")}
-        nameStateFR="Всё о ножах: как правильно выбрать"
-        dataStateFR="24.07.2019"
+      <div className="sliders_div">
+        <SliderCards nameSlider="Хит продаж" toPage="Перейти в каталог" />
+      </div>
+      <div className="sliders_div">
+        <SliderCards nameSlider="Хит продаж" toPage="Перейти в каталог" />
+      </div>
+      <Block
+        nameBlock="Новинки"
+        textBlock="Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками."
+        toPageBlock="Больше новинок"
       />
-      </div> */}
-      <NewsHTML />
+      <div className="sliders_div">
+        <SliderCards nameSlider="Хит продаж" toPage="Перейти в каталог" />
+      </div>
+      <div className="sliders_div">
+        <SliderCards nameSlider="Хит продаж" toPage="Перейти в каталог" />
+      </div>
+      <OursArticles
+        nameblock='Наши статьи'
+      />
+      <AdvertisementBlock/>
+      <div className="sliders_div">
+        <SliderCards nameSlider="Хит продаж" toPage="Перейти в каталог" />
+      </div>
     </div>
   );
 }

@@ -534,7 +534,7 @@
     margin: 0;
     width: 100%;
     height: 295px;
-    object-fit: fill; 
+    object-fit: fill;
 }
 
 
@@ -551,31 +551,40 @@
     margin-top: 20px;
     padding: 0px 20px 29px 20px;
 }
-.infoCard hr{
+
+.infoCard hr {
     margin: 20px 0px 20px 0px;
     width: 100%;
     padding: 0 20px 0 20px;
 }
-.price{
+
+.price {
     font-weight: 600;
     font-size: 20px;
     line-height: 34px;
     color: #141414;
 }
-.favoritesAndComparison .fa-scale-balanced{
+
+.favoritesAndComparison .fa-scale-balanced {
     font-size: 28px;
     margin-right: 15px;
 }
-.favoritesAndComparison .fa-heart{
+
+.favoritesAndComparison .fa-heart {
     font-size: 28px;
     color: #E8AA31;
 }
-.button{
+
+.button {
     margin-top: 26px;
     display: flex;
     justify-content: center;
 }
-.button button{
+
+
+
+.button button,
+.buttonA {
     width: 316px;
     height: 50px;
     background-color: #E8AA31;
@@ -588,11 +597,27 @@
     align-items: center;
     box-shadow: 0 0 10px #E8AA31;
 }
-.fa-cart-shopping{
+
+.buttonA {
+    margin: 46px 0 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonA a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-cart-shopping {
     margin-left: 15px;
     font-size: 18px;
 }
-.nameKnife{
+
+.nameKnife {
     font-weight: 600;
     font-size: 20px;
     line-height: 34px;
@@ -605,7 +630,8 @@
     justify-content: space-between;
     align-items: center;
 }
-.quantityRevios{
+
+.quantityRevios {
     font-weight: 500;
     font-size: 16px;
     line-height: 34px;
@@ -634,9 +660,9 @@
     background-image: url("../images/backgroundForBlock.png");
     background-size: cover;
     width: 100%;
-    border: 1px solid red;
     margin-top: 164px;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 30px 0px;
+    margin-bottom: 120px;
 }
 
 .settingsText {
@@ -760,28 +786,137 @@
 
 .OursArticles {
     display: flex;
+    flex-direction: column;
+    width: 1590px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.OursArticles div:nth-child(1) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #141414;
+    margin-bottom: 30px;
+}
+
+.newsBlock {
+    display: flex;
     flex-direction: row;
+    gap: 30px;
+}
+
+.NewsR {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 350px;
+    box-shadow: 0px 0px 10px rgb(155, 155, 155);
+}
+
+.NewsR p:nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #141414;
+    padding: 20px 30px 0px 30px;
+    letter-spacing: 0;
+}
+
+.NewsR p:nth-child(3) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+    color: #ABABAB;
+    padding: 8px 0px 0px 30px;
+    letter-spacing: 0;
 }
 
 .NewsR img {
     width: 375px;
     height: 200px;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 /* FOOTER */
 
 
+/* рекламные блоки */
+
+.advertisement {
+    width: 770px;
+    height: 293px;
+    box-shadow: 0px 0px 10px rgb(155, 155, 155);
+    display: flex;
+    flex-direction: row;
+}
+
+.textPartA {
+    width: 360px;
+}
+
+.textPartA p:nth-child(1) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #000000;
+    padding: 30px 0 0 30px;
+}
+
+.hrBlockA {
+    width: 68px;
+    height: 2px;
+    margin: 15px 0 0 30px;
+    background-color: #E8AA31;
+    border: none;
+}
+
+.AdvertisementBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 120px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.textPartA p:nth-child(3) {
+    color: #141414;
+    padding: 30px 0 0 30px;
+}
+
+.imgPartA {
+    margin-left: 60px;
+    width: 370px;
+    height: 100%;
+    display: flex;
+    right: 0;
+
+}
+
+.imgPartA img {
+    object-fit: fill;
+    display: flex;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* конец рекламных блоки */
+
 
 
 /* МЕДИА ЗАПРОСЫ */
 @media (max-width: 1853px) {
-    .settingsText{
+    .settingsText {
         margin-left: 5%;
     }
-    .settingsSlider{
+
+    .settingsSlider {
         margin-right: 5%;
     }
+
     .CenterDown {
         gap: 0;
     }
