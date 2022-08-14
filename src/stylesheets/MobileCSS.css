@@ -4,6 +4,7 @@ li {
   margin: 0;
   padding: 0;
 }
+
 .MobileMenu,
 .SecondMenu,
 .Categ,
@@ -12,14 +13,15 @@ li {
 .Zatoch,
 .Masterskaya {
   display: none;
-  overflow: scroll;
+  overflow-y: hidden;
 }
+
 @media (max-width: 992px) {
+
   .MobileMenu,
   .SecondMenu,
   .Categ,
   .Proizv,
-  .MarkStal,
   .Zatoch,
   .Masterskaya {
     display: block;
@@ -35,9 +37,19 @@ li {
     z-index: 100;
     left: -40%;
     transition: 0.5s;
-    bottom: 0;
-    height: 81vh;
+    top: 150px;
+    /* bottom: 0; */
+    height: 100%;
+    position: fixed;
   }
+
+
+
+
+
+
+
+
   .MobileMenuClose,
   .SecondMenuClose,
   .CategClose,
@@ -48,6 +60,7 @@ li {
     left: 0;
     transition: 0.5s;
   }
+
   .MobileMenu li,
   .SecondMenu li,
   .Categ li,
@@ -60,15 +73,49 @@ li {
     border-bottom: 1px solid #3d3d3d;
     padding: 20px 0 20px 30px;
   }
+
   .fa-chevron-right {
     position: absolute;
     right: 20px;
   }
+
   .fa-angle-left {
     margin-right: 20px;
   }
+
+  .MarkStal {
+    background-color: #141414;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    width: 40%;
+    z-index: 100;
+    left: -40%;
+    transition: 0.5s;
+    top: 150px;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .MarkStalClose {
+    left: 0;
+    position: absolute;
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .MarkStalClose ol {
+    height: 672px;
+    position: absolute;
+    display: block;
+    /* overflow-y: scroll; */
+    z-index: 99999;
+  }
 }
+
 @media (max-width: 760px) {
+
   .MobileMenu,
   .SecondMenu,
   .Categ,
@@ -90,9 +137,11 @@ li {
     left: -60%;
     transition: 0.5s;
   }
-  
+
 }
+
 @media (max-width: 520px) {
+
   .MobileMenu,
   .SecondMenu,
   .Categ,
@@ -114,9 +163,11 @@ li {
     left: -100%;
     transition: 0.5s;
   }
-  
+
 }
+
 @media (max-width: 430px) {
+
   .MobileMenu,
   .SecondMenu,
   .Categ,
@@ -139,6 +190,7 @@ li {
     transition: 0.5s;
     height: auto;
   }
+
   .MobileMenuClose,
   .SecondMenuClose,
   .CategClose,
@@ -150,7 +202,9 @@ li {
     transition: 0.5s;
   }
 }
+
 @media (max-width: 320px) {
+
   .MobileMenu,
   .SecondMenu,
   .Categ,
