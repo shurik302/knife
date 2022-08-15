@@ -5,6 +5,7 @@ li {
   padding: 0;
 }
 
+
 .MobileMenu,
 .SecondMenu,
 .Categ,
@@ -16,12 +17,27 @@ li {
   overflow-y: hidden;
 }
 
+.MobileMenuClose,
+.SecondMenuClose,
+.CategClose,
+.ProizvClose,
+.MarkStalClose,
+.ZatochClose,
+.MasterskayaClose {
+  display: none;
+  left: 0;
+  position: fixed;
+  height: calc(100vh - 150px);
+  transition: 0.5s;
+}
+
 @media (max-width: 992px) {
 
   .MobileMenu,
   .SecondMenu,
   .Categ,
   .Proizv,
+  .MarkStal,
   .Zatoch,
   .Masterskaya {
     display: block;
@@ -30,44 +46,16 @@ li {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    /* height: 100vh; */
     width: 40%;
-    position: absolute;
-    /* margin-top: 150px; */
     z-index: 100;
     left: -40%;
-    transition: 0.5s;
     top: 150px;
-    /* bottom: 0; */
-    height: 100%;
     position: fixed;
-  }
-
-
-
-
-
-
-
-
-  .MobileMenuClose,
-  .SecondMenuClose,
-  .CategClose,
-  .ProizvClose,
-  .MarkStalClose,
-  .ZatochClose,
-  .MasterskayaClose {
-    left: 0;
+    height: calc(100vh - 150px);
     transition: 0.5s;
   }
 
-  .MobileMenu li,
-  .SecondMenu li,
-  .Categ li,
-  .Proizv li,
-  .MarkStal li,
-  .Zatoch li,
-  .Masterskaya li {
+  .inblock ol li {
     padding: 0;
     width: 100%;
     border-bottom: 1px solid #3d3d3d;
@@ -83,34 +71,27 @@ li {
     margin-right: 20px;
   }
 
-  .MarkStal {
-    background-color: #141414;
-    color: white;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    width: 40%;
-    z-index: 100;
-    left: -40%;
-    transition: 0.5s;
-    top: 150px;
-    height: 100vh;
-    position: fixed;
-  }
-
-  .MarkStalClose {
-    left: 0;
+  .inblock {
+    width: 100%;
+    height: calc(100vh - 150px);
     position: absolute;
     display: block;
     overflow-y: scroll;
+    z-index: 99999;
   }
 
-  .MarkStalClose ol {
-    height: 672px;
-    position: absolute;
+  .MobileMenuClose,
+  .SecondMenuClose,
+  .CategClose,
+  .ProizvClose,
+  .MarkStalClose,
+  .ZatochClose,
+  .MasterskayaClose {
+    left: 0;
+    position: fixed;
     display: block;
-    /* overflow-y: scroll; */
-    z-index: 99999;
+    height: calc(100vh - 150px);
+    transition: 0.5s;
   }
 }
 
@@ -123,21 +104,23 @@ li {
   .MarkStal,
   .Zatoch,
   .Masterskaya {
-    display: block;
-    background-color: #141414;
-    color: white;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    /* height: 100vh; */
     width: 60%;
-    position: absolute;
-    /* margin-top: 150px; */
-    z-index: 100;
     left: -60%;
-    transition: 0.5s;
   }
 
+  .MobileMenuClose,
+  .SecondMenuClose,
+  .CategClose,
+  .ProizvClose,
+  .MarkStalClose,
+  .ZatochClose,
+  .MasterskayaClose {
+    left: 0;
+    position: fixed;
+    display: block;
+    height: calc(100vh - 150px);
+    transition: 0.5s;
+  }
 }
 
 @media (max-width: 520px) {
@@ -155,15 +138,26 @@ li {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    /* height: 100vh; */
     width: 100%;
     position: absolute;
-    /* margin-top: 150px; */
     z-index: 100;
     left: -100%;
     transition: 0.5s;
   }
 
+  .MobileMenuClose,
+  .SecondMenuClose,
+  .CategClose,
+  .ProizvClose,
+  .MarkStalClose,
+  .ZatochClose,
+  .MasterskayaClose {
+    left: 0;
+    position: fixed;
+    display: block;
+    height: calc(100vh - 150px);
+    transition: 0.5s;
+  }
 }
 
 @media (max-width: 430px) {
@@ -181,14 +175,13 @@ li {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    /* height: 100vh; */
     width: 100%;
     position: absolute;
     top: 130px;
     z-index: 100;
     left: -100%;
     transition: 0.5s;
-    height: auto;
+    height: calc(100vh - 110px);
   }
 
   .MobileMenuClose,
@@ -199,6 +192,9 @@ li {
   .ZatochClose,
   .MasterskayaClose {
     left: 0;
+    position: fixed;
+    display: block;
+    height: calc(100vh - 110px);
     transition: 0.5s;
   }
 }
@@ -218,12 +214,26 @@ li {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    /* height: 100vh; */
     width: 100%;
     position: absolute;
-    /*  margin-top: 121px; */
     z-index: 100;
     left: -100%;
+    transition: 0.5s;
+    top: 121px;
+    height: calc(100vh - 121px);
+  }
+
+  .MobileMenuClose,
+  .SecondMenuClose,
+  .CategClose,
+  .ProizvClose,
+  .MarkStalClose,
+  .ZatochClose,
+  .MasterskayaClose {
+    left: 0;
+    position: fixed;
+    display: block;
+    height: calc(100vh - 121px);
     transition: 0.5s;
   }
 }
