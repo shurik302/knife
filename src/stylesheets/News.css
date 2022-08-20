@@ -1,48 +1,123 @@
 /* ПОТОМ ПЕРЕНЕСТИ В Components.css */
+
+body {
+  overflow: hidden;
+}
+.headNews {
+  height: auto;
+}
+
+
+
+.ALLPage {
+  height: calc(100vh - 340px);
+}
+
 .divwithImage {
-    height: 80vh;
-    width: 100%;
-    position: absolute;
-  }
-  .divwithImage::before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.513);
-    position: absolute;
-    width: 100%;
-    height: 80vh;
-  }
-  .BackgroundImageNews {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .contentNews {
-    position: relative;
-    z-index: 2;
-    color: white;
-  }
-  .techPart {
-    position: absolute;
-    margin: 40px 160px 0 160px;
-    top: 0;
-  }
-  .divWithFoto {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  .divWithFoto img {
-    width: 960px;
-    height: 540px;
-  }
-  .divWithFoto div img {
-    width: 460px;
-    height: 260px;
-  }
-  .divWithFoto div img:nth-child(1) {
-    margin-bottom: 20px;
-  }
-  body {
-    overflow: hidden;
-  }
-  
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+}
+
+.divwithImage::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.513);
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+}
+
+.BackgroundImageNewsB {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.techPart {
+  width: 80%;
+  height: 10000px;
+  position: absolute;
+  margin: 285px 10% 0 10%;
+  top: 0;
+}
+
+
+.headB div img {
+  width: 960px;
+  height: 540px;
+}
+
+.headB div div img {
+  width: 480px;
+  height: 250px;
+}
+
+.headB div img:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.headB {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.NewB {
+  position: relative;
+}
+
+.NewB p{
+  position: absolute;
+  color: white;
+  margin-top: -500px;
+}
+
+.NewB:hover> .NewB p{
+  color: #e8aa31;
+}
+
+.fNew:hover::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.513);
+  position: absolute;
+  height: 540px;
+  width: 960px;
+  transition: 0.5s;
+}
+
+
+.sNew:hover::before,
+.tNew:hover::before{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.513);
+  position: absolute;
+  height: 250px;
+  width: 480px;
+  transition: 0.5s;
+}
+.contentNews {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.fNew:nth-child(1) {
+  height: 540px;
+  width: 960px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.sNew,
+.tNew{
+  margin-left: 980px;
+  height: 260px;
+  width: 480px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.tNew{
+  margin-top: 290px;
+}
+

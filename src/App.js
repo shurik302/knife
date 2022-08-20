@@ -12,6 +12,7 @@ import News from './pages/News';
 import Personal_cabinet from './pages/Personal_cabinet';
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import Shop from './pages/Shop.js'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Route path='/delivery' exact element={<Delivery/>} />
       <Route path='/news' exact element={<News/>} />
       <Route path='/personal_cabinet' exact element={<Personal_cabinet/>} />
+      <Route path='/Shop' exact element={<Shop/>} />
       </Routes>
       <Footer/>
     </Router>

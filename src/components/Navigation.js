@@ -10,7 +10,7 @@ import en from '../images/england.png';
 import ru from '../images/nrussia.png';
 import { Trans, useTranslation } from "react-i18next";
 import { addEvent } from "../components/Function";
-import { lang } from "../components/Function";
+import { langclick } from "../components/Function";
 function Navigation() {
   const { t, i18n } = useTranslation();
 
@@ -104,13 +104,13 @@ function Navigation() {
             <i class="far fa-heart"></i>
             <i class="fas fa-shopping-cart"></i>
             <div className="moneyHead">
-              <span>0 р.</span>
+              <span>0 грн.</span>
               <Link to="">
                 <span>Оформить заказ</span>
               </Link>
             </div>
           </div>
-          <i class="fa-solid fa-earth-europe"></i>
+          <i class="fa-solid fa-earth-europe" onClick={langclick}></i>
           <div className="languageMenu">
             <button className="ua" onClick={() => changeLanguage("ua")}><img src={ua}></img></button>
             <button className="en" onClick={() => changeLanguage("en")}><img src={en}></img></button>
@@ -258,10 +258,6 @@ function Navigation() {
                 <div className="BottomCatalogeHeadDropDown leftSpacing">
                   <ol className="showallCatKnife">
                     <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
                   </ol>
                 </div>
               </div>
@@ -404,10 +400,6 @@ function Navigation() {
                 <hr className="lineb" />
                 <div className="BottomCatalogeHeadDropDown leftSpacing">
                   <ol className="showallCatKnife">
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
                     <li>Смотреть все</li>
                   </ol>
                 </div>
@@ -552,10 +544,6 @@ function Navigation() {
                 <div className="BottomCatalogeHeadDropDown leftSpacing">
                   <ol className="showallCatKnife">
                     <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
                   </ol>
                 </div>
               </div>
@@ -699,10 +687,6 @@ function Navigation() {
                 <div className="BottomCatalogeHeadDropDown leftSpacing">
                   <ol className="showallCatKnife">
                     <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
                   </ol>
                 </div>
               </div>
@@ -845,11 +829,7 @@ function Navigation() {
                 <hr className="lineb" />
                 <div className="BottomCatalogeHeadDropDown leftSpacing">
                   <ol className="showallCatKnife">
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
-                    <li>Смотреть все</li>
+                    <Link to='/Shop'><li>Смотреть все</li></Link>
                   </ol>
                 </div>
               </div>

@@ -65,31 +65,7 @@ export function BackMasterskaya() {
     BackMasterskaya.classList.toggle('MasterskayaClose')
 }
 
-
-/* 
-export function Language(){
-    const lanUa = document.querySelector('ua');
-    const lanEn = document.querySelector('en');
-    const lanRu = document.querySelector('ru'); */     
-    /* const iconL = document.querySelector('.fa-earth-europe'); */
-    
-    /* iconL.addEventListener("click", function(){ alert("Hello World!"); }); */
-    /* document.querySelector('#faEu').onclick = function(){
-        const langM = document.querySelector('.languageMenu');
-        langM.classList.toogle('open')
-    }
+export function langclick() {
+    const languageMenu = document.querySelector('.languageMenu');
+    languageMenu.classList.toggle('open');
 }
-
-document.querySelector('#faEu').onclick = function faEu(){
-    const langM = document.querySelector('.languageMenu');
-    langM.classList.toogle('open')
-} */
-
-
-export function lang(){
-    document.querySelector('.faEuI').onclick = function() {
-        console.log('test')
-    }
-}
-
-/*  */

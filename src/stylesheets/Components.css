@@ -71,6 +71,9 @@
     gap: 5px;
     display: none;
 }
+.open {
+    display: flex;
+}
 
 .languageMenu button {
     width: 60px;
@@ -84,9 +87,7 @@
     z-index: 1000;
 }
 
-.open {
-    display: flex;
-}
+
 
 .languageMenu button img {
     width: 60px;
@@ -237,7 +238,6 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    width: 30px;
 }
 
 .moneyHead span {
@@ -286,7 +286,7 @@
 .catalogeHeadDown {
     width: 100%;
     height: 605px;
-    background-color: black;
+    background-color: #141414;
     position: absolute;
     left: 0;
     visibility: hidden;
@@ -391,30 +391,18 @@
     flex-direction: row;
     align-items: center;
     margin-left: 12px;
+    margin-right: 192px;
     height: 80px;
     padding: 0px;
+    justify-content: center;
 }
 
-.showallCatKnife li:nth-child(2) {
-    margin-left: 134px;
-}
-
-.showallCatKnife li:nth-child(3) {
-    margin-left: 168px;
-}
-
-.showallCatKnife li:nth-child(4) {
-    margin-left: 171px;
-}
-
-.showallCatKnife li:nth-child(5) {
-    margin-left: 227px;
-}
 
 .showallCatKnife li {
     font-size: 16px;
     font-weight: 500;
     color: #e8aa31;
+    
 }
 
 /*slider*/
@@ -984,7 +972,7 @@
 
     .navUlPerson {
         position: absolute;
-        right: 140px;
+        right: 180px;
     }
 
     .navUl li a {
@@ -993,12 +981,6 @@
 
     .navUl {
         gap: 40px;
-    }
-
-    .showallCatKnife li:nth-child(2),
-    .showallCatKnife li:nth-child(3),
-    .showallCatKnife li:nth-child(4) {
-        margin-left: 10%;
     }
 
     .showallCatKnife li:nth-child(5) {
@@ -1126,7 +1108,7 @@
 
     .navUlPerson {
         position: absolute;
-        right: 90px;
+        right: 110px;
     }
 
     .navUl li a {
@@ -1200,7 +1182,7 @@
 
 @media (max-width: 576px) {
     .navUlPerson {
-        right: 100px;
+        right: 120px;
     }
 
     .uCab {
@@ -1280,6 +1262,11 @@
 }
 
 @media (max-width: 530px) {
+    .knifeTitle img {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .TitleButton {
         display: none;
     }
@@ -1313,7 +1300,7 @@
 
     .navUlPerson {
         position: absolute;
-        right: 50px;
+        right: 60px;
     }
 
     .fa-earth-europe {

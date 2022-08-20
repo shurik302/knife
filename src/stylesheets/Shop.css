@@ -1,0 +1,147 @@
+.padding{
+	padding-left: 30px;
+}
+
+/* .AllShop{
+
+} */
+
+.FiltrBlock{
+	margin-left: 172px;
+	margin-top: 30px;
+	width: 375px;
+}
+
+.infoS p{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	color: #141414;
+	margin-bottom: 25px;
+}
+.infoS a{
+	color: black;
+}
+
+.infoS a:nth-child(2){
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #141414;
+	opacity: 0.5;
+}
+
+.infoS a:nth-child(4){
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #E8AA31;
+}
+
+.infoS i{
+	margin: 0 15px 0 15px;
+}
+
+.Filtr{
+	box-shadow: 0px 0px 10px rgb(155, 155, 155);
+	
+}
+
+.FitrT{
+	background: #141414;
+	padding: 23px 169px 23px 30px;
+}
+
+.FitrT p{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.Price{
+	padding: 30px;
+	
+}
+.PriceText{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.Price div i{
+	color: #E8AA31;
+	font-size: 20px;
+}
+
+.priceSelect{
+	display: flex;
+	flex-direction: row;
+}
+.hide{
+	display: none;
+}
+
+.priceSelect input{
+	border: 1px solid #CBCBCB ;
+	padding: 11px 36px 12px 36px;
+	width: 156px;
+	height: 42px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #141414;
+	text-align: center;
+}
+.priceSelector div:nth-child(2) {
+	position: relative;
+}
+.priceSelector div:nth-child(2) input {
+	position: absolute;
+	-webkit-appearance: none;
+	background: #d3d3d3;
+}
+.priceSelector div:nth-child(2) input:nth-child(1){
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.priceSelector div:nth-child(2) input:nth-child(2){
+	right: 55px;
+	-webkit-appearance: none;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.priceSelector div:nth-child(2) input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+	position: absolute;
+}
+.priceSelector div:nth-child(2) input::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+
+/* .inputRot{
+	transform: rotate(180deg);
+} */
+
+
+
+
+
+
+
+
+
+/* .MainShop{
+
+}
+ */

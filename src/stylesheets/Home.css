@@ -16,6 +16,7 @@
 
 .upanddownSlider {
     background-image: url(../images/background-image_title.png);
+    object-fit: cover;
 }
 
 .knifeTitle {
@@ -233,6 +234,10 @@
     top: -5px;
 }
 
+.infoOn992 {
+    display: none;
+}
+
 @media (max-width: 1600px) {
     .AllCategories {
         margin: 0;
@@ -247,6 +252,7 @@
     }
 
     .bottomTitle {
+        margin-top: 340px;
         gap: 18px;
     }
 
@@ -337,8 +343,35 @@
 }
 
 @media (max-width: 992px) {
+    .infoOn992 {
+        box-shadow: 0px 0px 10px grey;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 50px auto 0px auto;
+        padding: 20px 20px 30px 15px;
+    }
+
+    .infoOn992 span:nth-child(1) {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+
+    .infoOn992 span:nth-child(2) {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
     .AllCategories {
-        width: 400px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -358,13 +391,16 @@
         flex-direction: column;
         margin-top: 260px;
         padding-bottom: 0;
+        margin-bottom: 45px;
     }
 }
 
 @media (max-width: 860px) {
     .AllCategories {
         grid-template-columns: repeat(1, 1fr);
-
+        width: 400px;
+        margin: auto;
+        margin-top: 60px;
     }
 
     .categorie {
@@ -379,6 +415,11 @@
 }
 
 @media (max-width: 630px) {
+    .AllCategories {
+        width: 290px;
+        margin: 100px auto 0 auto;
+    }
+
     .upanddownSlider {
         background-image: url(../images/background_bigWid.png);
         background-repeat: no-repeat;
@@ -399,7 +440,7 @@
     }
 
     .bottomTitle {
-        margin-top: 200px;
+        margin-top: 280px;
         padding: 0;
     }
 
@@ -411,21 +452,11 @@
     .bottomTitle div div {
         justify-content: center;
         align-items: center;
-    }
-}
-
-@media (max-width: 530px) {
-    .bottomTitle {
-        margin-top: 280px;
+        width: 100%;
+        margin: 0 30px 0 30px;
     }
 
-    .knifeTitle img {
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .categorie{
+    .categorie {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -434,7 +465,7 @@
     }
 
 
-    .categorie span{
+    .categorie span {
         font-weight: 600;
         font-size: 20px;
         line-height: 34px;
@@ -443,23 +474,26 @@
         margin-right: auto;
         margin-left: auto;
     }
-    .categorie hr{
+
+    .categorie hr {
         margin-top: 10;
         margin-right: auto;
         margin-left: auto;
     }
-    .categorie ul{
+
+    .categorie ul {
         margin-top: 30px;
     }
+
     .FCat img {
         width: 82px;
         height: 291px;
         position: absolute;
-        top: 256px;
+        top: 41px;
         left: 42px;
-        rotate: (-90deg);
+        rotate: -90deg;
     }
-    
+
     .SCat img {
         position: absolute;
         width: 82px;
@@ -467,7 +501,7 @@
         left: 363px;
         top: 23px;
     }
-    
+
     .TCat img {
         position: absolute;
         width: 244px;
@@ -475,7 +509,7 @@
         left: 265px;
         top: 68px;
     }
-    
+
     .FourCat img {
         position: absolute;
         width: 183px;
@@ -483,7 +517,7 @@
         left: 326px;
         top: 31px;
     }
-    
+
     .FifCat img {
         position: absolute;
         width: 320px;
@@ -491,7 +525,7 @@
         left: 254px;
         top: 76px;
     }
-    
+
     .SixCat img {
         position: absolute;
         width: 415px;

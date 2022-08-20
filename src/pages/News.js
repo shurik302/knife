@@ -8,13 +8,21 @@ import third_knife from '../images/third_knife.png'
 function News() {
     return (
         <div>
-            <NewsPageFoundation
-            BackgroundImageNews={bactestknife}
-            nameState='Всё о ножах: как правильно выбрать'
-            firstimg={first_knife}
-            secondomg={second_knife}
-            thirdimg={third_knife}
-            />
+            <div className='headNews'>
+                <NewsPageFoundation
+                BackgroundImageNews={bactestknife}
+                nameState='Всё о ножах: как правильно выбрать'
+                firstimg={first_knife}
+                secondomg={second_knife}
+                thirdimg={third_knife}
+                />
+            </div>
+            <div className='mainPartNews'>
+
+            </div>
+            <div className='endPartNews'>
+                
+            </div>
         </div>
     )
 }
