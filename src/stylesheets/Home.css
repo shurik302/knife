@@ -1,5 +1,6 @@
 .slick-slider {
     z-index: -1;
+    
 }
 
 .allTitle {
@@ -236,6 +237,10 @@
 
 .infoOn992 {
     display: none;
+}
+
+.sliders_div{
+    margin-bottom: 250px;
 }
 
 @media (max-width: 1600px) {

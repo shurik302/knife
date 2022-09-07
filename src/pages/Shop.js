@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import '../stylesheets/Shop.css';
+import * as noUiSlider from 'nouislider';
+import onSlide from '../components/Range.js'
+
+
 
 function Shop() {
-	const [stateMin, setStateMin] = useState(0);
+	/* const [stateMin, setStateMin] = useState(0);
+	alles ok
+	Ну то й добре 
+	на щастя
 	const [stateMax, setStateMax] = useState(5000);
 	const [stateInputMin, setStateInputMin] = useState(0);
 	const [stateInputMax, setStateInputMax] = useState(0);
@@ -21,9 +28,22 @@ function Shop() {
 	function HidePrice(){
 		const price = document.querySelector('.priceSelector')
 		price.classList.toggle('hide')
-	}
+	} */
+	var slider = document.getElementById('sliderRan');
+	noUiSlider.create(slider, {
+		start: [20, 80],
+		connect: true,
+		range: {
+			'min': 0,
+			'max': 100
+		}
+	});
 	return (
+		
+
 		<div className='AllShop'>
+			<onSlide/>
+			<link href="nouislider.css" rel="stylesheet"></link>
 			<div className='FiltrBlock'>
 				<div className='infoS'>
 					<p>Разделочные ножи</p>
@@ -38,9 +58,9 @@ function Shop() {
 					<div className='Price'>
 						<div className='PriceText'>
 							<p>Цена</p>
-							<i onClick={HidePrice} class="fa-solid fa-chevron-up"></i>
+							<i /* onClick={HidePrice} */ class="fa-solid fa-chevron-up"></i>
 						</div>
-						<div className='priceSelector'>
+						{/* <div className='priceSelector'>
 							<div className='priceSelect'>
 								<input
 									onChange={checkedPriceInputMin} 
@@ -70,7 +90,8 @@ function Shop() {
 								/>
 							</div>
 							
-						</div>
+						</div> */}
+						<div id="sliderRan"></div>
 					</div>
 
 				</div>

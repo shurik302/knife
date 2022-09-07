@@ -69,3 +69,9 @@ export function langclick() {
     const languageMenu = document.querySelector('.languageMenu');
     languageMenu.classList.toggle('open');
 }
+
+export function AlertRules(){
+    console.log('work')
+    const AllAlert = document.querySelector('.AllAlert');
+    AllAlert.classList.toggle('SeeAlert');
+}

@@ -6,7 +6,7 @@ import '../stylesheets/Components.css'
 function OursArticles({nameblock}) {
     return (
         <div className='OursArticles'>
-            <div>{nameblock}</div>
+            <div className='ImageArt'>{nameblock}</div>
             <div className='newsBlock'>
                 {News.map((test, key) => {
                     return (

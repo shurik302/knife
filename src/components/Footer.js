@@ -17,7 +17,7 @@ import viber from '../images/viber.png';
 import whatsapp from '../images/whatsapp.png';
 import telegram from '../images/telegram.png';
 
-
+import AlertRules from '../components/Function'
 
 function Footer() {
     return (
@@ -84,7 +84,7 @@ function Footer() {
                         <li>Недовольны своей покупкой?
                             Вы можете вернуть ее в течении
                             30 дней с даты получения,
-                            согласно <a className='OurRules' href='#'>нашим правилам</a>
+                            согласно <a onClick={AlertRules} className='OurRules' href='#'>нашим правилам</a>
                         </li>
                     </ol>
                     <ol>
@@ -95,7 +95,11 @@ function Footer() {
                                 <input type='text' placeholder='example@gmail.com' />
                                 <button className='BtnF' type='button' onClick={checkBtn}>
                                     {/* <i class="fa-solid fa-chevron-right"></i> */}
-
+                {/* test */}
+                //* test
+                //*!test
+                //*?test
+                //TODO 
                                 </button>
                             </form>
                         </li>

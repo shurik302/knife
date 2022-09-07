@@ -4,7 +4,7 @@ import '../stylesheets/Components.css';
 function NewsHTML({ imageCard, nameState, dataState }) {
   return (
     <div className='NewsR'>
-      <img src={imageCard}></img>
+      <div className='imageNews'><img src={imageCard}></img></div>
       <p>{nameState}</p>
       <p>{dataState}</p>
     </div>

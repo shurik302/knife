@@ -7,6 +7,7 @@ import star from '../images/star.png';
 import { targets } from "./Collection";
 import '../stylesheets/Components.css';
 import { settings } from "./Collection";
+import '../stylesheets/Components.css'
 
 export default class MultipleItems extends Component {
   render() {
@@ -82,18 +83,15 @@ const cssstyle = `
   z-index:2;
   width:95%;
 }
-.SliderCards{
-  margin-top:0px;
-  height:fit-content;
-  margin-top:93px;
-}
+
 
 .SliderCards{
+  margin-top:0px;
+  height:485px;
+  margin-top:93px;
   position:relative;
   max-width:84%;
   margin:auto;
-  /* margin-left:7%;
-  margin-right:7%; */
 }
 
 .SliderCards .slick-dots li{

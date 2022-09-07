@@ -9,6 +9,8 @@
     "i18next": "^21.9.0",
     "i18next-browser-languagedetector": "^6.1.5",
     "i18next-http-backend": "^1.4.1",
+    "nouislider": "^15.6.1",
+    "nouislider-react": "^3.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^11.18.3",
