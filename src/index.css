@@ -1,54 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-*{
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+* {
+    box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding: 0; 
-  font-family: 'Montserrat', sans-serif;
-  padding-inline-start: 0px;
-  max-width: 100%;
-  overflow-x: hidden;
-  font-weight: 900;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    padding-inline-start: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-weight: 900;
 }
-p{
-  margin: 0;
-  padding: 0;
+p {
+    margin: 0;
+    padding: 0;
 }
-html{
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 ol,
-ul{
-  list-style-type:none ;
-  padding-inline-start: 0;
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
 }
-a{
-  text-decoration: none;
-  color: white;
+a {
+    text-decoration: none;
+    color: white;
 }
-.FixedB{
-  overflow-y:hidden ;
-  height: 100vh;
+.FixedB {
+    overflow-y: hidden;
+    height: 100vh;
 }
-
 
 .Scroll {
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  width: 100%;
-  background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #f1f1f1;
 }
 .progress-container {
-  width: 100%;
-  height: 8px;
-  background: #141414;
+    width: 100%;
+    height: 8px;
+    background: #141414;
 }
 .progress-bar {
-  height: 8px;
-  background: #e8aa31;
-  width: 0%;
+    height: 8px;
+    background: #e8aa31;
+    width: 0%;
 }

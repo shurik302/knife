@@ -1,30 +1,26 @@
-import React from 'react';
-import NewsPageFoundation from '../components/NewsPageFoundation';
-import bactestknife from '../images/backtestknife.png';
-import first_knife from '../images/first_knife.png';
-import second_knife from '../images/second_knife.png';
-import third_knife from '../images/third_knife.png'
+import React from "react";
+import NewsPageFoundation from "../components/NewsPageFoundation";
+import bactestknife from "../images/backtestknife.png";
+import first_knife from "../images/first_knife.png";
+import second_knife from "../images/second_knife.png";
+import third_knife from "../images/third_knife.png";
 
 function News() {
     return (
         <div>
-            <div className='headNews'>
+            <div className="headNews">
                 <NewsPageFoundation
-                BackgroundImageNews={bactestknife}
-                nameState='Всё о ножах: как правильно выбрать'
-                firstimg={first_knife}
-                secondomg={second_knife}
-                thirdimg={third_knife}
+                    BackgroundImageNews={bactestknife}
+                    nameState="Всё о ножах: как правильно выбрать"
+                    firstimg={first_knife}
+                    secondomg={second_knife}
+                    thirdimg={third_knife}
                 />
             </div>
-            <div className='mainPartNews'>
-
-            </div>
-            <div className='endPartNews'>
-                
-            </div>
+            <div className="mainPartNews"></div>
+            <div className="endPartNews"></div>
         </div>
-    )
+    );
 }
 
-export default News
+export default News;

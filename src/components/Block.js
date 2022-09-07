@@ -3,32 +3,34 @@ import Slider from "react-slick";
 import { settingsBlock } from "./Collection";
 import KnifeLisa from "../product/KnifeLisa";
 import Lantern from "../product/Lantern";
-import '../stylesheets/Components.css'
+import "../stylesheets/Components.css";
 
 export default class SecondItems extends Component {
-  render() {
-    return (
-      <div className='AllBlock'>
-        <div className="settingsText">
-          <span>{this.props.nameBlock}</span>
-          <span>{this.props.textBlock}</span>
-          <a href='#'>{this.props.toPageBlock}<i class="fa-solid fa-angle-right"></i></a>
-        </div>
-        <div className="settingsSlider">
-          <style>{cssstyle}</style>
-          <Slider {...settingsBlock}>
-            <KnifeLisa />
-            <Lantern />
-            <KnifeLisa />
-            <Lantern />
-            <KnifeLisa />
-            <Lantern />
-          </Slider>
-        </div>
-
-      </div>
-    )
-  }
+    render() {
+        return (
+            <div className="AllBlock">
+                <div className="settingsText">
+                    <span>{this.props.nameBlock}</span>
+                    <span>{this.props.textBlock}</span>
+                    <a href="#">
+                        {this.props.toPageBlock}
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+                <div className="settingsSlider">
+                    <style>{cssstyle}</style>
+                    <Slider {...settingsBlock}>
+                        <KnifeLisa />
+                        <Lantern />
+                        <KnifeLisa />
+                        <Lantern />
+                        <KnifeLisa />
+                        <Lantern />
+                    </Slider>
+                </div>
+            </div>
+        );
+    }
 }
 
 const cssstyle = `
@@ -54,4 +56,4 @@ const cssstyle = `
 .AllBlock li.slick-active button {
 background-color: #E8AA31;       
 }
-`
+`;

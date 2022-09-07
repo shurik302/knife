@@ -1,10 +1,9 @@
 ol,
 ul,
 li {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
-
 
 .MobileMenu,
 .SecondMenu,
@@ -13,8 +12,8 @@ li {
 .MarkStal,
 .Zatoch,
 .Masterskaya {
-  display: none;
-  overflow-y: hidden;
+    display: none;
+    overflow-y: hidden;
 }
 
 .MobileMenuClose,
@@ -24,216 +23,211 @@ li {
 .MarkStalClose,
 .ZatochClose,
 .MasterskayaClose {
-  display: none;
-  left: 0;
-  position: fixed;
-  height: calc(100vh - 150px);
-  transition: 0.5s;
+    display: none;
+    left: 0;
+    position: fixed;
+    height: calc(100vh - 150px);
+    transition: 0.5s;
 }
 
 @media (max-width: 992px) {
+    .MobileMenu,
+    .SecondMenu,
+    .Categ,
+    .Proizv,
+    .MarkStal,
+    .Zatoch,
+    .Masterskaya {
+        display: block;
+        background-color: #141414;
+        color: white;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        width: 40%;
+        z-index: 100;
+        left: -40%;
+        top: 150px;
+        position: fixed;
+        height: calc(100vh - 150px);
+        transition: 0.5s;
+    }
 
-  .MobileMenu,
-  .SecondMenu,
-  .Categ,
-  .Proizv,
-  .MarkStal,
-  .Zatoch,
-  .Masterskaya {
-    display: block;
-    background-color: #141414;
-    color: white;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    width: 40%;
-    z-index: 100;
-    left: -40%;
-    top: 150px;
-    position: fixed;
-    height: calc(100vh - 150px);
-    transition: 0.5s;
-  }
+    .inblock ol li {
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid #3d3d3d;
+        padding: 20px 0 20px 30px;
+    }
 
-  .inblock ol li {
-    padding: 0;
-    width: 100%;
-    border-bottom: 1px solid #3d3d3d;
-    padding: 20px 0 20px 30px;
-  }
+    .fa-chevron-right {
+        position: absolute;
+        right: 20px;
+    }
 
-  .fa-chevron-right {
-    position: absolute;
-    right: 20px;
-  }
+    .fa-angle-left {
+        margin-right: 20px;
+    }
 
-  .fa-angle-left {
-    margin-right: 20px;
-  }
+    .inblock {
+        width: 100%;
+        height: calc(100vh - 150px);
+        position: absolute;
+        display: block;
+        overflow-y: scroll;
+        z-index: 99999;
+    }
 
-  .inblock {
-    width: 100%;
-    height: calc(100vh - 150px);
-    position: absolute;
-    display: block;
-    overflow-y: scroll;
-    z-index: 99999;
-  }
-
-  .MobileMenuClose,
-  .SecondMenuClose,
-  .CategClose,
-  .ProizvClose,
-  .MarkStalClose,
-  .ZatochClose,
-  .MasterskayaClose {
-    left: 0;
-    position: fixed;
-    display: block;
-    height: calc(100vh - 150px);
-    transition: 0.5s;
-  }
+    .MobileMenuClose,
+    .SecondMenuClose,
+    .CategClose,
+    .ProizvClose,
+    .MarkStalClose,
+    .ZatochClose,
+    .MasterskayaClose {
+        left: 0;
+        position: fixed;
+        display: block;
+        height: calc(100vh - 150px);
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 760px) {
+    .MobileMenu,
+    .SecondMenu,
+    .Categ,
+    .Proizv,
+    .MarkStal,
+    .Zatoch,
+    .Masterskaya {
+        width: 60%;
+        left: -60%;
+    }
 
-  .MobileMenu,
-  .SecondMenu,
-  .Categ,
-  .Proizv,
-  .MarkStal,
-  .Zatoch,
-  .Masterskaya {
-    width: 60%;
-    left: -60%;
-  }
-
-  .MobileMenuClose,
-  .SecondMenuClose,
-  .CategClose,
-  .ProizvClose,
-  .MarkStalClose,
-  .ZatochClose,
-  .MasterskayaClose {
-    left: 0;
-    position: fixed;
-    display: block;
-    height: calc(100vh - 150px);
-    transition: 0.5s;
-  }
+    .MobileMenuClose,
+    .SecondMenuClose,
+    .CategClose,
+    .ProizvClose,
+    .MarkStalClose,
+    .ZatochClose,
+    .MasterskayaClose {
+        left: 0;
+        position: fixed;
+        display: block;
+        height: calc(100vh - 150px);
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 520px) {
+    .MobileMenu,
+    .SecondMenu,
+    .Categ,
+    .Proizv,
+    .MarkStal,
+    .Zatoch,
+    .Masterskaya {
+        display: block;
+        background-color: #141414;
+        color: white;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        left: -100%;
+        transition: 0.5s;
+    }
 
-  .MobileMenu,
-  .SecondMenu,
-  .Categ,
-  .Proizv,
-  .MarkStal,
-  .Zatoch,
-  .Masterskaya {
-    display: block;
-    background-color: #141414;
-    color: white;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-    left: -100%;
-    transition: 0.5s;
-  }
-
-  .MobileMenuClose,
-  .SecondMenuClose,
-  .CategClose,
-  .ProizvClose,
-  .MarkStalClose,
-  .ZatochClose,
-  .MasterskayaClose {
-    left: 0;
-    position: fixed;
-    display: block;
-    height: calc(100vh - 150px);
-    transition: 0.5s;
-  }
+    .MobileMenuClose,
+    .SecondMenuClose,
+    .CategClose,
+    .ProizvClose,
+    .MarkStalClose,
+    .ZatochClose,
+    .MasterskayaClose {
+        left: 0;
+        position: fixed;
+        display: block;
+        height: calc(100vh - 150px);
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 430px) {
+    .MobileMenu,
+    .SecondMenu,
+    .Categ,
+    .Proizv,
+    .MarkStal,
+    .Zatoch,
+    .Masterskaya {
+        display: block;
+        background-color: #141414;
+        color: white;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        width: 100%;
+        position: absolute;
+        top: 130px;
+        z-index: 100;
+        left: -100%;
+        transition: 0.5s;
+        height: calc(100vh - 110px);
+    }
 
-  .MobileMenu,
-  .SecondMenu,
-  .Categ,
-  .Proizv,
-  .MarkStal,
-  .Zatoch,
-  .Masterskaya {
-    display: block;
-    background-color: #141414;
-    color: white;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    width: 100%;
-    position: absolute;
-    top: 130px;
-    z-index: 100;
-    left: -100%;
-    transition: 0.5s;
-    height: calc(100vh - 110px);
-  }
-
-  .MobileMenuClose,
-  .SecondMenuClose,
-  .CategClose,
-  .ProizvClose,
-  .MarkStalClose,
-  .ZatochClose,
-  .MasterskayaClose {
-    left: 0;
-    position: fixed;
-    display: block;
-    height: calc(100vh - 110px);
-    transition: 0.5s;
-  }
+    .MobileMenuClose,
+    .SecondMenuClose,
+    .CategClose,
+    .ProizvClose,
+    .MarkStalClose,
+    .ZatochClose,
+    .MasterskayaClose {
+        left: 0;
+        position: fixed;
+        display: block;
+        height: calc(100vh - 110px);
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 320px) {
+    .MobileMenu,
+    .SecondMenu,
+    .Categ,
+    .Proizv,
+    .MarkStal,
+    .Zatoch,
+    .Masterskaya {
+        display: block;
+        background-color: #141414;
+        color: white;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        left: -100%;
+        transition: 0.5s;
+        top: 121px;
+        height: calc(100vh - 121px);
+    }
 
-  .MobileMenu,
-  .SecondMenu,
-  .Categ,
-  .Proizv,
-  .MarkStal,
-  .Zatoch,
-  .Masterskaya {
-    display: block;
-    background-color: #141414;
-    color: white;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-    left: -100%;
-    transition: 0.5s;
-    top: 121px;
-    height: calc(100vh - 121px);
-  }
-
-  .MobileMenuClose,
-  .SecondMenuClose,
-  .CategClose,
-  .ProizvClose,
-  .MarkStalClose,
-  .ZatochClose,
-  .MasterskayaClose {
-    left: 0;
-    position: fixed;
-    display: block;
-    height: calc(100vh - 121px);
-    transition: 0.5s;
-  }
+    .MobileMenuClose,
+    .SecondMenuClose,
+    .CategClose,
+    .ProizvClose,
+    .MarkStalClose,
+    .ZatochClose,
+    .MasterskayaClose {
+        left: 0;
+        position: fixed;
+        display: block;
+        height: calc(100vh - 121px);
+        transition: 0.5s;
+    }
 }

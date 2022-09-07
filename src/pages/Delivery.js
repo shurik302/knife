@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Delivery() {
-    return (
-        <div>
-            
-        </div>
-    )
+    return <div></div>;
 }
 
-export default Delivery
+export default Delivery;

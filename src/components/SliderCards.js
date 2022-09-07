@@ -1,73 +1,87 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import SmallCard from '../components/SmallCard';
+import SmallCard from "../components/SmallCard";
 import KnifeLisa from "../product/KnifeLisa";
 import Lantern from "../product/Lantern";
-import star from '../images/star.png';
+import star from "../images/star.png";
 import { targets } from "./Collection";
-import '../stylesheets/Components.css';
+import "../stylesheets/Components.css";
 import { settings } from "./Collection";
-import '../stylesheets/Components.css'
+import "../stylesheets/Components.css";
 
 export default class MultipleItems extends Component {
-  render() {
-
-    const random = targets.sort(() => Math.random() - Math.random())
-      .sort(() => true);
-    return (
-      <div className="SliderCards">
-        <style>{cssstyle}</style>
-        <div>
-
-        </div>
-        <div className="upSlider">
-          <h1>{this.props.nameSlider}</h1>
-          <a href="#">{this.props.toPage} <i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-
-        <Slider {...settings}>
-
-          {targets.map((target, id) => (
-            <div>
-              <div className='AllSCard'>
-                <div className='divInImg'>
-                  <img src={target.img} />
+    render() {
+        const random = targets
+            .sort(() => Math.random() - Math.random())
+            .sort(() => true);
+        return (
+            <div className="SliderCards">
+                <style>{cssstyle}</style>
+                <div></div>
+                <div className="upSlider">
+                    <h1>{this.props.nameSlider}</h1>
+                    <a href="#">
+                        {this.props.toPage}{" "}
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
 
-                <div className='infoCard'>
-                  <span className='nameKnife'>{target.name}</span>
-                  <div className='info'>
-                    <span className='size'>{target.size}</span>
-                    <span className='material'>{target.material}</span>
-                  </div>
-                  <div className='raiting'>
-                    <div>
-                      <img src={star} />
-                      <img src={star} />
-                      <img src={star} />
-                      <img src={star} />
-                      <img src={star} />
-                    </div>
-                    <span className='quantityRevios'>{target.quantity} отзывов</span>
-                  </div>
-                  <hr />
-                  <div className='priceAndAnother'>
-                    <span className='price'>{target.price}</span>
-                    <div className='favoritesAndComparison'>
-                      <i class="fa-solid fa-scale-balanced"></i>
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                  </div>
-                  <div className='button'><button>В корзину<i class="fa-solid fa-cart-shopping"></i></button></div>
-                </div>
-              </div>
+                <Slider {...settings}>
+                    {targets.map((target, id) => (
+                        <div>
+                            <div className="AllSCard">
+                                <div className="divInImg">
+                                    <img src={target.img} />
+                                </div>
+
+                                <div className="infoCard">
+                                    <span className="nameKnife">
+                                        {target.name}
+                                    </span>
+                                    <div className="info">
+                                        <span className="size">
+                                            {target.size}
+                                        </span>
+                                        <span className="material">
+                                            {target.material}
+                                        </span>
+                                    </div>
+                                    <div className="raiting">
+                                        <div>
+                                            <img src={star} />
+                                            <img src={star} />
+                                            <img src={star} />
+                                            <img src={star} />
+                                            <img src={star} />
+                                        </div>
+                                        <span className="quantityRevios">
+                                            {target.quantity} отзывов
+                                        </span>
+                                    </div>
+                                    <hr />
+                                    <div className="priceAndAnother">
+                                        <span className="price">
+                                            {target.price}
+                                        </span>
+                                        <div className="favoritesAndComparison">
+                                            <i class="fa-solid fa-scale-balanced"></i>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div className="button">
+                                        <button>
+                                            В корзину
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
             </div>
-
-          ))}
-        </Slider>
-      </div>
-    );
-  }
+        );
+    }
 }
 
 const cssstyle = `
@@ -125,4 +139,4 @@ const cssstyle = `
 background-color: #E8AA31;
         
 }
-`
+`;

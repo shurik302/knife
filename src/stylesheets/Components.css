@@ -88,8 +88,6 @@
     z-index: 1000;
 }
 
-
-
 .languageMenu button img {
     width: 60px;
     height: 40px;
@@ -295,12 +293,12 @@
     margin-top: 24px;
 }
 
-.catalogeHeadOl .classForLine:hover>a {
+.catalogeHeadOl .classForLine:hover > a {
     border-bottom: 2px solid #e8aa31;
     padding-bottom: 22px;
 }
 
-.catalogeHeadOl li:hover>.catalogeHeadDown {
+.catalogeHeadOl li:hover > .catalogeHeadDown {
     visibility: visible;
 }
 
@@ -398,12 +396,10 @@
     justify-content: center;
 }
 
-
 .showallCatKnife li {
     font-size: 16px;
     font-weight: 500;
     color: #e8aa31;
-
 }
 
 /*slider*/
@@ -525,14 +521,13 @@
     object-fit: fill;
 }
 
-
 .info {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
     font-size: 16px;
     line-height: 34px;
-    color: #ABABAB;
+    color: #ababab;
 }
 
 .infoCard {
@@ -561,7 +556,7 @@
 
 .favoritesAndComparison .fa-heart {
     font-size: 28px;
-    color: #E8AA31;
+    color: #e8aa31;
     cursor: pointer;
 }
 
@@ -571,21 +566,19 @@
     justify-content: center;
 }
 
-
-
 .button button,
 .buttonA {
     width: 316px;
     height: 50px;
-    background-color: #E8AA31;
+    background-color: #e8aa31;
     font-weight: 600;
     font-size: 18px;
     line-height: 46px;
-    color: #FFFFFF;
+    color: #ffffff;
     border: none;
     border-radius: 3px;
     align-items: center;
-    box-shadow: 0 0 10px #E8AA31;
+    box-shadow: 0 0 10px #e8aa31;
     cursor: pointer;
 }
 
@@ -626,7 +619,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 34px;
-    color: #ABABAB;
+    color: #ababab;
 }
 
 .raiting div {
@@ -818,18 +811,18 @@
     display: block;
 }
 
-.NewsR:hover>.imageNews img {
+.NewsR:hover > .imageNews img {
     transform: scale(1.2);
     display: inline-block;
 }
 
-.NewsR:hover>p:nth-child(2) {
+.NewsR:hover > p:nth-child(2) {
     font-size: 25px;
-    color: #E8AA31;
+    color: #e8aa31;
     transition: 0.25s;
 }
 
-.NewsR:hover>p:nth-child(3) {
+.NewsR:hover > p:nth-child(3) {
     transition: 0.25s;
 }
 
@@ -847,7 +840,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 34px;
-    color: #ABABAB;
+    color: #ababab;
     padding: 8px 0px 0px 30px;
     letter-spacing: 0;
     transition: 0.25s;
@@ -861,7 +854,6 @@
 }
 
 /* FOOTER */
-
 
 /* рекламные блоки */
 
@@ -889,7 +881,7 @@
     width: 68px;
     height: 2px;
     margin: 15px 0 0 30px;
-    background-color: #E8AA31;
+    background-color: #e8aa31;
     border: none;
 }
 
@@ -914,7 +906,6 @@
     height: 100%;
     display: flex;
     right: 0;
-
 }
 
 .imgPartA img {
@@ -926,7 +917,6 @@
 }
 
 /* конец рекламных блоки */
-
 
 /* Alert */
 .AllAlert {
@@ -943,7 +933,6 @@
 }
 
 /* End Alert */
-
 
 /* МЕДИА ЗАПРОСЫ */
 @media (max-width: 1853px) {
@@ -1005,7 +994,6 @@
 }
 
 @media (max-width: 1400px) {
-
     .locationHead,
     .searchLine {
         margin-left: 1%;
@@ -1203,7 +1191,6 @@
 }
 
 @media (max-width: 630px) {
-
     .title,
     .titleBott {
         font-size: 18px;

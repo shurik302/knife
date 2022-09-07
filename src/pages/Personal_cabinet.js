@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Personal_cabinet() {
-    return (
-        <div>
-            
-        </div>
-    )
+    return <div></div>;
 }
 
-export default Personal_cabinet
+export default Personal_cabinet;

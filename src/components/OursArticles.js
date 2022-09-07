@@ -1,13 +1,13 @@
-import React from 'react'
-import { News } from './NewsList';
-import NewsHTML from './NewsHTML';
-import '../stylesheets/Components.css'
+import React from "react";
+import { News } from "./NewsList";
+import NewsHTML from "./NewsHTML";
+import "../stylesheets/Components.css";
 
-function OursArticles({nameblock}) {
+function OursArticles({ nameblock }) {
     return (
-        <div className='OursArticles'>
-            <div className='ImageArt'>{nameblock}</div>
-            <div className='newsBlock'>
+        <div className="OursArticles">
+            <div className="ImageArt">{nameblock}</div>
+            <div className="newsBlock">
                 {News.map((test, key) => {
                     return (
                         <NewsHTML
@@ -16,11 +16,11 @@ function OursArticles({nameblock}) {
                             nameState={test.nameState}
                             dataState={test.dataState}
                         />
-                    )
+                    );
                 })}
             </div>
         </div>
-    )
+    );
 }
 
-export default OursArticles
+export default OursArticles;
